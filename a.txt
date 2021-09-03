@@ -1,0 +1,216 @@
+2021-09-03T03:51:09.638885+00:00 heroku[web.1]: Process exited with status 143
+2021-09-03T03:51:20.256309+00:00 heroku[web.1]: Starting process with command `python line-bot.py`
+2021-09-03T03:51:23.526376+00:00 app[web.1]: * Serving Flask app 'line-bot' (lazy loading)
+2021-09-03T03:51:23.526413+00:00 app[web.1]: * Environment: production
+2021-09-03T03:51:23.526458+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T03:51:23.526503+00:00 app[web.1]: Use a production WSGI server instead.
+2021-09-03T03:51:23.526521+00:00 app[web.1]: * Debug mode: off
+2021-09-03T03:51:23.534112+00:00 app[web.1]: * Running on all addresses.
+2021-09-03T03:51:23.534113+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T03:51:23.534260+00:00 app[web.1]: * Running on http://172.19.9.238:59410/ (Press CTRL+C to quit)
+2021-09-03T03:51:24.597704+00:00 heroku[web.1]: State changed from starting to up
+2021-09-03T03:52:44.045513+00:00 app[api]: Starting process with command `google-chrome --version` by user basketball.no8.ibu@gmail.com
+2021-09-03T03:52:55.031542+00:00 heroku[run.1577]: State changed from starting to up
+2021-09-03T03:52:55.047411+00:00 heroku[run.1577]: Awaiting client
+2021-09-03T03:52:55.081257+00:00 heroku[run.1577]: Starting process with command `google-chrome --version`
+2021-09-03T03:52:59.671108+00:00 heroku[run.1577]: Process exited with status 0
+2021-09-03T03:52:59.777893+00:00 heroku[run.1577]: State changed from up to complete
+2021-09-03T03:57:01.105971+00:00 app[api]: Starting process with command `chromedriver -v` by user basketball.no8.ibu@gmail.com
+2021-09-03T03:57:10.468036+00:00 heroku[run.5879]: Awaiting client
+2021-09-03T03:57:10.497640+00:00 heroku[run.5879]: Starting process with command `chromedriver -v`
+2021-09-03T03:57:10.581485+00:00 heroku[run.5879]: State changed from starting to up
+2021-09-03T03:57:14.676461+00:00 heroku[run.5879]: Process exited with status 0
+2021-09-03T03:57:15.001549+00:00 heroku[run.5879]: State changed from up to complete
+2021-09-03T04:11:03.125644+00:00 app[api]: Release v12 created by user basketball.no8.ibu@gmail.com
+2021-09-03T04:11:03.125644+00:00 app[api]: Set CHROME_VERSION config vars by user basketball.no8.ibu@gmail.com
+2021-09-03T04:11:03.380589+00:00 heroku[web.1]: Restarting
+2021-09-03T04:11:03.441065+00:00 heroku[web.1]: State changed from up to starting
+2021-09-03T04:11:04.375022+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-09-03T04:11:04.618740+00:00 heroku[web.1]: Process exited with status 143
+2021-09-03T04:11:13.888997+00:00 heroku[web.1]: Starting process with command `python line-bot.py`
+2021-09-03T04:11:16.387948+00:00 app[web.1]: * Serving Flask app 'line-bot' (lazy loading)
+2021-09-03T04:11:16.387966+00:00 app[web.1]: * Environment: production
+2021-09-03T04:11:16.387988+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T04:11:16.388015+00:00 app[web.1]: Use a production WSGI server instead.
+2021-09-03T04:11:16.388050+00:00 app[web.1]: * Debug mode: off
+2021-09-03T04:11:16.392702+00:00 app[web.1]: * Running on all addresses.
+2021-09-03T04:11:16.392703+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T04:11:16.392872+00:00 app[web.1]: * Running on http://172.17.57.158:9497/ (Press CTRL+C to quit)
+2021-09-03T04:11:17.564427+00:00 heroku[web.1]: State changed from starting to up
+2021-09-03T04:12:41.000000+00:00 app[api]: Build started by user basketball.no8.ibu@gmail.com
+2021-09-03T04:14:12.174698+00:00 app[api]: Deploy 735b554e by user basketball.no8.ibu@gmail.com
+2021-09-03T04:14:12.174698+00:00 app[api]: Release v13 created by user basketball.no8.ibu@gmail.com
+2021-09-03T04:14:12.398813+00:00 heroku[web.1]: Restarting
+2021-09-03T04:14:12.482332+00:00 heroku[web.1]: State changed from up to starting
+2021-09-03T04:14:13.281194+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-09-03T04:14:13.421606+00:00 heroku[web.1]: Process exited with status 143
+2021-09-03T04:14:21.441904+00:00 heroku[web.1]: Starting process with command `python line-bot.py`
+2021-09-03T04:14:23.658756+00:00 app[web.1]: * Serving Flask app 'line-bot' (lazy loading)
+2021-09-03T04:14:23.658772+00:00 app[web.1]: * Environment: production
+2021-09-03T04:14:23.658779+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T04:14:23.658791+00:00 app[web.1]: Use a production WSGI server instead.
+2021-09-03T04:14:23.658804+00:00 app[web.1]: * Debug mode: off
+2021-09-03T04:14:23.659658+00:00 app[web.1]: * Running on all addresses.
+2021-09-03T04:14:23.659659+00:00 app[web.1]: WARNING: This is a development server. Do not use it in a production deployment.
+2021-09-03T04:14:23.659736+00:00 app[web.1]: * Running on http://172.19.4.50:12430/ (Press CTRL+C to quit)
+2021-09-03T04:14:25.336890+00:00 heroku[web.1]: State changed from starting to up
+2021-09-03T04:14:27.000000+00:00 app[api]: Build succeeded
+2021-09-03T04:14:57.237161+00:00 app[api]: Starting process with command `chromedriver -v` by user basketball.no8.ibu@gmail.com
+2021-09-03T04:15:06.219676+00:00 heroku[run.8395]: Awaiting client
+2021-09-03T04:15:06.250803+00:00 heroku[run.8395]: Starting process with command `chromedriver -v`
+2021-09-03T04:15:06.351907+00:00 heroku[run.8395]: State changed from starting to up
+2021-09-03T04:15:10.520428+00:00 heroku[run.8395]: Process exited with status 0
+2021-09-03T04:15:10.876041+00:00 heroku[run.8395]: State changed from up to complete
+2021-09-03T04:15:47.360818+00:00 app[api]: Starting process with command `google-chrome --version` by user basketball.no8.ibu@gmail.com
+2021-09-03T04:15:56.490293+00:00 heroku[run.5607]: Awaiting client
+2021-09-03T04:15:56.504723+00:00 heroku[run.5607]: Starting process with command `google-chrome --version`
+2021-09-03T04:15:56.537828+00:00 heroku[run.5607]: State changed from starting to up
+2021-09-03T04:16:00.854672+00:00 heroku[run.5607]: Process exited with status 0
+2021-09-03T04:16:00.938004+00:00 heroku[run.5607]: State changed from up to complete
+2021-09-03T04:16:44.321457+00:00 app[web.1]: line-bot.py:80: DeprecationWarning: use options instead of chrome_options
+2021-09-03T04:16:44.321465+00:00 app[web.1]: browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
+2021-09-03T04:16:47.566121+00:00 app[web.1]: [2021-09-03 13:16:47,564] ERROR in app: Exception on /callback [POST]
+2021-09-03T04:16:47.566148+00:00 app[web.1]: Traceback (most recent call last):
+2021-09-03T04:16:47.566149+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+2021-09-03T04:16:47.566149+00:00 app[web.1]: response = self.full_dispatch_request()
+2021-09-03T04:16:47.566150+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+2021-09-03T04:16:47.566150+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2021-09-03T04:16:47.566150+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+2021-09-03T04:16:47.566151+00:00 app[web.1]: rv = self.dispatch_request()
+2021-09-03T04:16:47.566151+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+2021-09-03T04:16:47.566151+00:00 app[web.1]: return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+2021-09-03T04:16:47.566151+00:00 app[web.1]: File "line-bot.py", line 46, in callback
+2021-09-03T04:16:47.566151+00:00 app[web.1]: handler.handle(body, signature)
+2021-09-03T04:16:47.566152+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 260, in handle
+2021-09-03T04:16:47.566152+00:00 app[web.1]: self.__invoke_func(func, event, payload)
+2021-09-03T04:16:47.566152+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 272, in __invoke_func
+2021-09-03T04:16:47.566153+00:00 app[web.1]: func(event)
+2021-09-03T04:16:47.566153+00:00 app[web.1]: File "line-bot.py", line 55, in handle_message
+2021-09-03T04:16:47.566154+00:00 app[web.1]: text = scraping(event)
+2021-09-03T04:16:47.566154+00:00 app[web.1]: File "line-bot.py", line 86, in scraping
+2021-09-03T04:16:47.566154+00:00 app[web.1]: line_bot_api.reply_message(
+2021-09-03T04:16:47.566154+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 110, in reply_message
+2021-09-03T04:16:47.566154+00:00 app[web.1]: self._post(
+2021-09-03T04:16:47.566155+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1621, in _post
+2021-09-03T04:16:47.566155+00:00 app[web.1]: self.__check_error(response)
+2021-09-03T04:16:47.566155+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1657, in __check_error
+2021-09-03T04:16:47.566155+00:00 app[web.1]: raise LineBotApiError(
+2021-09-03T04:16:47.566157+00:00 app[web.1]: linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=dab92a80-8e17-4e9d-bae8-e3f13bc81dd6, error_response={"details": [], "message": "Invalid reply token"}, headers={'Server': 'openresty', 'Content-Type': 'application/json', 'Content-Length': '33', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': 'dab92a80-8e17-4e9d-bae8-e3f13bc81dd6', 'x-xss-protection': '1; mode=block', 'Expires': 'Fri, 03 Sep 2021 04:16:47 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store', 'Pragma': 'no-cache', 'Date': 'Fri, 03 Sep 2021 04:16:47 GMT', 'Connection': 'close'}
+2021-09-03T04:16:47.566986+00:00 app[web.1]: 10.1.16.145 - - [03/Sep/2021 13:16:47] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
+2021-09-03T04:16:47.568214+00:00 heroku[router]: at=info method=POST path="/callback" host=line-notice-bot.herokuapp.com request_id=72d71150-a90d-407c-983b-0b2b588e1b51 fwd="147.92.149.170" dyno=web.1 connect=0ms service=3545ms status=500 bytes=464 protocol=https
+2021-09-03T04:22:13.460841+00:00 heroku[router]: at=info method=POST path="/callback" host=line-notice-bot.herokuapp.com request_id=7b7f1a69-6ec7-4785-95d3-e55149af64fd fwd="147.92.149.170" dyno=web.1 connect=0ms service=3107ms status=500 bytes=464 protocol=https
+2021-09-03T04:22:13.459930+00:00 app[web.1]: [2021-09-03 13:22:13,459] ERROR in app: Exception on /callback [POST]
+2021-09-03T04:22:13.459939+00:00 app[web.1]: Traceback (most recent call last):
+2021-09-03T04:22:13.459940+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+2021-09-03T04:22:13.459941+00:00 app[web.1]: response = self.full_dispatch_request()
+2021-09-03T04:22:13.459941+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+2021-09-03T04:22:13.459942+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2021-09-03T04:22:13.459942+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+2021-09-03T04:22:13.459942+00:00 app[web.1]: rv = self.dispatch_request()
+2021-09-03T04:22:13.459943+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+2021-09-03T04:22:13.459943+00:00 app[web.1]: return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+2021-09-03T04:22:13.459943+00:00 app[web.1]: File "line-bot.py", line 46, in callback
+2021-09-03T04:22:13.459943+00:00 app[web.1]: handler.handle(body, signature)
+2021-09-03T04:22:13.459944+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 260, in handle
+2021-09-03T04:22:13.459944+00:00 app[web.1]: self.__invoke_func(func, event, payload)
+2021-09-03T04:22:13.459944+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 272, in __invoke_func
+2021-09-03T04:22:13.459945+00:00 app[web.1]: func(event)
+2021-09-03T04:22:13.459946+00:00 app[web.1]: File "line-bot.py", line 55, in handle_message
+2021-09-03T04:22:13.459947+00:00 app[web.1]: text = scraping(event)
+2021-09-03T04:22:13.459947+00:00 app[web.1]: File "line-bot.py", line 86, in scraping
+2021-09-03T04:22:13.459947+00:00 app[web.1]: line_bot_api.reply_message(
+2021-09-03T04:22:13.459948+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 110, in reply_message
+2021-09-03T04:22:13.459948+00:00 app[web.1]: self._post(
+2021-09-03T04:22:13.459948+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1621, in _post
+2021-09-03T04:22:13.459948+00:00 app[web.1]: self.__check_error(response)
+2021-09-03T04:22:13.459948+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1657, in __check_error
+2021-09-03T04:22:13.459949+00:00 app[web.1]: raise LineBotApiError(
+2021-09-03T04:22:13.459950+00:00 app[web.1]: linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=f3309376-1905-4218-bbc7-d4f62a8d0653, error_response={"details": [], "message": "Invalid reply token"}, headers={'Server': 'openresty', 'Content-Type': 'application/json', 'Content-Length': '33', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': 'f3309376-1905-4218-bbc7-d4f62a8d0653', 'x-xss-protection': '1; mode=block', 'Expires': 'Fri, 03 Sep 2021 04:22:13 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store', 'Pragma': 'no-cache', 'Date': 'Fri, 03 Sep 2021 04:22:13 GMT', 'Connection': 'close'}
+2021-09-03T04:22:13.460521+00:00 app[web.1]: 10.1.9.157 - - [03/Sep/2021 13:22:13] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
+2021-09-03T04:22:17.906536+00:00 heroku[router]: at=info method=POST path="/callback" host=line-notice-bot.herokuapp.com request_id=eddd2b7b-6ebf-4dd7-8f74-7ea992fe371e fwd="147.92.149.170" dyno=web.1 connect=0ms service=2840ms status=500 bytes=464 protocol=https
+2021-09-03T04:22:17.905563+00:00 app[web.1]: [2021-09-03 13:22:17,905] ERROR in app: Exception on /callback [POST]
+2021-09-03T04:22:17.905573+00:00 app[web.1]: Traceback (most recent call last):
+2021-09-03T04:22:17.905574+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+2021-09-03T04:22:17.905574+00:00 app[web.1]: response = self.full_dispatch_request()
+2021-09-03T04:22:17.905574+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+2021-09-03T04:22:17.905575+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2021-09-03T04:22:17.905575+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+2021-09-03T04:22:17.905576+00:00 app[web.1]: rv = self.dispatch_request()
+2021-09-03T04:22:17.905576+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+2021-09-03T04:22:17.905576+00:00 app[web.1]: return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+2021-09-03T04:22:17.905576+00:00 app[web.1]: File "line-bot.py", line 46, in callback
+2021-09-03T04:22:17.905577+00:00 app[web.1]: handler.handle(body, signature)
+2021-09-03T04:22:17.905577+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 260, in handle
+2021-09-03T04:22:17.905577+00:00 app[web.1]: self.__invoke_func(func, event, payload)
+2021-09-03T04:22:17.905577+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 272, in __invoke_func
+2021-09-03T04:22:17.905578+00:00 app[web.1]: func(event)
+2021-09-03T04:22:17.905578+00:00 app[web.1]: File "line-bot.py", line 55, in handle_message
+2021-09-03T04:22:17.905579+00:00 app[web.1]: text = scraping(event)
+2021-09-03T04:22:17.905579+00:00 app[web.1]: File "line-bot.py", line 86, in scraping
+2021-09-03T04:22:17.905579+00:00 app[web.1]: line_bot_api.reply_message(
+2021-09-03T04:22:17.905579+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 110, in reply_message
+2021-09-03T04:22:17.905580+00:00 app[web.1]: self._post(
+2021-09-03T04:22:17.905580+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1621, in _post
+2021-09-03T04:22:17.905580+00:00 app[web.1]: self.__check_error(response)
+2021-09-03T04:22:17.905581+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1657, in __check_error
+2021-09-03T04:22:17.905581+00:00 app[web.1]: raise LineBotApiError(
+2021-09-03T04:22:17.905582+00:00 app[web.1]: linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=906834f9-2cf6-46f7-9b08-7aa8404ba06a, error_response={"details": [], "message": "Invalid reply token"}, headers={'Server': 'openresty', 'Content-Type': 'application/json', 'Content-Length': '33', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '906834f9-2cf6-46f7-9b08-7aa8404ba06a', 'x-xss-protection': '1; mode=block', 'Expires': 'Fri, 03 Sep 2021 04:22:17 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store', 'Pragma': 'no-cache', 'Date': 'Fri, 03 Sep 2021 04:22:17 GMT', 'Connection': 'close'}
+2021-09-03T04:22:17.906179+00:00 app[web.1]: 10.1.82.211 - - [03/Sep/2021 13:22:17] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
+2021-09-03T04:22:19.900204+00:00 heroku[router]: at=info method=POST path="/callback" host=line-notice-bot.herokuapp.com request_id=184cc92b-f6a3-4173-ba4e-9eea4e4458c8 fwd="147.92.149.170" dyno=web.1 connect=0ms service=3121ms status=500 bytes=464 protocol=https
+2021-09-03T04:22:19.899360+00:00 app[web.1]: [2021-09-03 13:22:19,898] ERROR in app: Exception on /callback [POST]
+2021-09-03T04:22:19.899372+00:00 app[web.1]: Traceback (most recent call last):
+2021-09-03T04:22:19.899372+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+2021-09-03T04:22:19.899373+00:00 app[web.1]: response = self.full_dispatch_request()
+2021-09-03T04:22:19.899386+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+2021-09-03T04:22:19.899387+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2021-09-03T04:22:19.899387+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+2021-09-03T04:22:19.899387+00:00 app[web.1]: rv = self.dispatch_request()
+2021-09-03T04:22:19.899388+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+2021-09-03T04:22:19.899388+00:00 app[web.1]: return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+2021-09-03T04:22:19.899388+00:00 app[web.1]: File "line-bot.py", line 46, in callback
+2021-09-03T04:22:19.899389+00:00 app[web.1]: handler.handle(body, signature)
+2021-09-03T04:22:19.899389+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 260, in handle
+2021-09-03T04:22:19.899390+00:00 app[web.1]: self.__invoke_func(func, event, payload)
+2021-09-03T04:22:19.899390+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 272, in __invoke_func
+2021-09-03T04:22:19.899391+00:00 app[web.1]: func(event)
+2021-09-03T04:22:19.899392+00:00 app[web.1]: File "line-bot.py", line 55, in handle_message
+2021-09-03T04:22:19.899392+00:00 app[web.1]: text = scraping(event)
+2021-09-03T04:22:19.899392+00:00 app[web.1]: File "line-bot.py", line 86, in scraping
+2021-09-03T04:22:19.899393+00:00 app[web.1]: line_bot_api.reply_message(
+2021-09-03T04:22:19.899393+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 110, in reply_message
+2021-09-03T04:22:19.899393+00:00 app[web.1]: self._post(
+2021-09-03T04:22:19.899394+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1621, in _post
+2021-09-03T04:22:19.899394+00:00 app[web.1]: self.__check_error(response)
+2021-09-03T04:22:19.899394+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1657, in __check_error
+2021-09-03T04:22:19.899395+00:00 app[web.1]: raise LineBotApiError(
+2021-09-03T04:22:19.899402+00:00 app[web.1]: linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=c6b68437-c405-48f4-bb4b-46e3613263e1, error_response={"details": [], "message": "Invalid reply token"}, headers={'Server': 'openresty', 'Content-Type': 'application/json', 'Content-Length': '33', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': 'c6b68437-c405-48f4-bb4b-46e3613263e1', 'x-xss-protection': '1; mode=block', 'Expires': 'Fri, 03 Sep 2021 04:22:19 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store', 'Pragma': 'no-cache', 'Date': 'Fri, 03 Sep 2021 04:22:19 GMT', 'Connection': 'close'}
+2021-09-03T04:22:19.900268+00:00 app[web.1]: 10.1.82.118 - - [03/Sep/2021 13:22:19] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
+2021-09-03T04:22:21.397012+00:00 heroku[router]: at=info method=POST path="/callback" host=line-notice-bot.herokuapp.com request_id=4cb42a47-23e5-46d8-88dd-e8ba05da9b18 fwd="147.92.149.170" dyno=web.1 connect=0ms service=2930ms status=500 bytes=464 protocol=https
+2021-09-03T04:22:21.396002+00:00 app[web.1]: [2021-09-03 13:22:21,395] ERROR in app: Exception on /callback [POST]
+2021-09-03T04:22:21.396012+00:00 app[web.1]: Traceback (most recent call last):
+2021-09-03T04:22:21.396013+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+2021-09-03T04:22:21.396013+00:00 app[web.1]: response = self.full_dispatch_request()
+2021-09-03T04:22:21.396013+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+2021-09-03T04:22:21.396014+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2021-09-03T04:22:21.396016+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+2021-09-03T04:22:21.396016+00:00 app[web.1]: rv = self.dispatch_request()
+2021-09-03T04:22:21.396031+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+2021-09-03T04:22:21.396031+00:00 app[web.1]: return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+2021-09-03T04:22:21.396031+00:00 app[web.1]: File "line-bot.py", line 46, in callback
+2021-09-03T04:22:21.396032+00:00 app[web.1]: handler.handle(body, signature)
+2021-09-03T04:22:21.396032+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 260, in handle
+2021-09-03T04:22:21.396032+00:00 app[web.1]: self.__invoke_func(func, event, payload)
+2021-09-03T04:22:21.396033+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/webhook.py", line 272, in __invoke_func
+2021-09-03T04:22:21.396033+00:00 app[web.1]: func(event)
+2021-09-03T04:22:21.396034+00:00 app[web.1]: File "line-bot.py", line 55, in handle_message
+2021-09-03T04:22:21.396034+00:00 app[web.1]: text = scraping(event)
+2021-09-03T04:22:21.396035+00:00 app[web.1]: File "line-bot.py", line 86, in scraping
+2021-09-03T04:22:21.396035+00:00 app[web.1]: line_bot_api.reply_message(
+2021-09-03T04:22:21.396035+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 110, in reply_message
+2021-09-03T04:22:21.396035+00:00 app[web.1]: self._post(
+2021-09-03T04:22:21.396036+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1621, in _post
+2021-09-03T04:22:21.396036+00:00 app[web.1]: self.__check_error(response)
+2021-09-03T04:22:21.396036+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/linebot/api.py", line 1657, in __check_error
+2021-09-03T04:22:21.396037+00:00 app[web.1]: raise LineBotApiError(
+2021-09-03T04:22:21.396037+00:00 app[web.1]: linebot.exceptions.LineBotApiError: LineBotApiError: status_code=400, request_id=576834c6-59ed-48d8-ae2a-655d10c98442, error_response={"details": [], "message": "Invalid reply token"}, headers={'Server': 'openresty', 'Content-Type': 'application/json', 'Content-Length': '33', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY', 'x-line-request-id': '576834c6-59ed-48d8-ae2a-655d10c98442', 'x-xss-protection': '1; mode=block', 'Expires': 'Fri, 03 Sep 2021 04:22:21 GMT', 'Cache-Control': 'max-age=0, no-cache, no-store', 'Pragma': 'no-cache', 'Date': 'Fri, 03 Sep 2021 04:22:21 GMT', 'Connection': 'close'}
+2021-09-03T04:22:21.396407+00:00 app[web.1]: 10.1.42.250 - - [03/Sep/2021 13:22:21] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
