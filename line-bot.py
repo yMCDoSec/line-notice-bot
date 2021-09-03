@@ -10,6 +10,7 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 import os
+import sys
 
 # scraping
 from selenium import webdriver
@@ -29,20 +30,23 @@ app = Flask(__name__)
 YOUR_CHANNEL_ACCESS_TOKEN = os.environ["YOUR_CHANNEL_ACCESS_TOKEN"]
 YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 
+if YOUR_CHANNEL_ACCESS_TOKEN is None:
+    print('Specify LINE_CHANNEL_ACCESS_TOKEN as environment variable.')
+    sys.exit(1)
+if YOUR_CHANNEL_SECRET is None:
+    print('Specify LINE_CHANNEL_SECRET as environment variable.')
+    sys.exit(1)
+
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
+
+
 
 
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
-    event = request.headers
-    signature = None
-    if "x-line-signature" in event["headers"]:
-        signature = event["headers"]["x-line-signature"]
-    elif "X-Line-Signature" in event["headers"]:
-        signature = event["headers"]["X-Line-Signature"]
-
+    signature = request.headers['X-Line-Signature']
 
     # get request body as text
     body = request.get_data(as_text=True)
@@ -57,21 +61,16 @@ def callback():
     return 'OK'
 
 @handler.add(MessageEvent, message=TextMessage)
-def sendMessage(event, text):
-    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text))
-
-# @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    text = scraping(event)
-    sendMessage(event, text)
+    text = scraping()
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text=text))
 
-def scraping(event):
+def scraping():
     NUMBER = "0015081677"
     PASSWORD = "20050102s"
     driver_path = '/app/.chromedriver/bin/chromedriver'
-
-    sendMessage(event, "function scraping")
-    sendMessage(event, "test")
 
 
     options = Options()
@@ -90,7 +89,6 @@ def scraping(event):
     browser.get(url)
     browser.implicitly_wait(3)
 
-    sendMessage(event, "login")
 
     # print("ログインページにアクセスしました")
 
@@ -109,7 +107,6 @@ def scraping(event):
     browser.execute_script("arguments[0].click();", element)
 
 
-    sendMessage(event, "output and login")
     # print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
@@ -117,9 +114,6 @@ def scraping(event):
     mypage_url = browser.find_element_by_css_selector(".btn-primary")
     mypage_url = mypage_url.get_attribute("href")
     browser.get(mypage_url)
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="マイページのURL; " + mypage_url))
     # print("マイページのURL: ", mypage_url)
 
     browser.implicitly_wait(3)
@@ -127,7 +121,6 @@ def scraping(event):
     element = browser.find_element_by_id("btn_Search_Medical")
     browser.execute_script("arguments[0].click();", element)
 
-    sendMessage(event, "select")
     # print("接種会場を選択")
 
     browser.implicitly_wait(3)
@@ -135,7 +128,6 @@ def scraping(event):
     element = browser.find_element_by_id("btn_search_medical")
     browser.execute_script("arguments[0].click();", element)
 
-    sendMessage(event, "search")
 
     browser.implicitly_wait(20)
     time.sleep(2)
