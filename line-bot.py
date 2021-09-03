@@ -85,15 +85,14 @@ def scraping():
 
     browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
 
-    url = "http://convert.html.xdomain.jp/"
-    # url = "https://v-yoyaku.jp/282014-himeji"
+    url = "https://v-yoyaku.jp/282014-himeji"
     browser.get(url)
     browser.implicitly_wait(3)
 
     time.sleep(3)
 
     print(browser.page_source)
-    print("ログインページにアクセスしました")
+    print("ログインページにアクセスしました" + browser.current_url)
 
     # 入力
     e = browser.find_element_by_id("login_id")
