@@ -89,8 +89,8 @@ def scraping():
     browser.get(url)
     browser.implicitly_wait(3)
 
-
-    # print("ログインページにアクセスしました")
+    print(browser.page_source)
+    print("ログインページにアクセスしました")
 
     # 入力
     e = browser.find_element_by_id("login_id")
@@ -102,26 +102,26 @@ def scraping():
     e.send_keys(PASSWORD)
 
     # フォームを転送
-    # print("テスト")
+    print("テスト")
     element = browser.find_element_by_id("btn_login")
     browser.execute_script("arguments[0].click();", element)
 
 
-    # print("情報を入力してログインボタンを押しました")
+    print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
 
     mypage_url = browser.find_element_by_css_selector(".btn-primary")
     mypage_url = mypage_url.get_attribute("href")
     browser.get(mypage_url)
-    # print("マイページのURL: ", mypage_url)
+    print("マイページのURL: ", mypage_url)
 
     browser.implicitly_wait(3)
 
     element = browser.find_element_by_id("btn_Search_Medical")
     browser.execute_script("arguments[0].click();", element)
 
-    # print("接種会場を選択")
+    print("接種会場を選択")
 
     browser.implicitly_wait(3)
 
