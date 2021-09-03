@@ -64,6 +64,7 @@ def scraping(event):
     driver_path = '/app/.chromedriver/bin/chromedriver'
 
     sendMessage(event, "function scraping")
+    sendMessage(event, "test")
 
 
     options = Options()
