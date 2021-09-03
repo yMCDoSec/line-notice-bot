@@ -13,9 +13,9 @@ import os
 
 # scraping
 from selenium import webdriver
-from webdriver_manager import chrome
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.utils import ChromeType
+# from webdriver_manager import chrome
+# from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.utils import ChromeType
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -60,10 +60,12 @@ def handle_message(event):
 def scraping():
     NUMBER = "0015081677"
     PASSWORD = "20050102s"
+    driver_path = '/app/.chromedriver/bin/chromedriver'
+
 
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    options.use_chromium = True
+    # options.use_chromium = True
     options.add_argument('--disable-gpu');
     options.add_argument('--disable-extensions');
     options.add_argument('--proxy-server="direct://"');
@@ -71,7 +73,7 @@ def scraping():
     options.add_argument('--start-maximized');
     options.add_argument('--headless');
 
-    browser = webdriver.Chrome(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install(), chrome_options=options)
+    browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
 
     url = "https://v-yoyaku.jp/282014-himeji"
     browser.get(url)
