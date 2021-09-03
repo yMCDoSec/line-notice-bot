@@ -89,6 +89,8 @@ def scraping():
     browser.get(url)
     browser.implicitly_wait(3)
 
+    time.sleep(3)
+
     print(browser.page_source)
     print("ログインページにアクセスしました")
 
@@ -110,6 +112,7 @@ def scraping():
     print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
+    time.sleep(3)
 
     mypage_url = browser.find_element_by_css_selector(".btn-primary")
     mypage_url = mypage_url.get_attribute("href")
