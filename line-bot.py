@@ -68,7 +68,7 @@ def scraping(event):
 
 
     options = Options()
-    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    # options.add_experimental_option('excludeSwitches', ['enable-logging'])
     # options.use_chromium = True
     options.add_argument('--disable-gpu');
     options.add_argument('--disable-extensions');
