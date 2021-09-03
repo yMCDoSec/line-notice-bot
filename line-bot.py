@@ -62,6 +62,10 @@ def scraping(event):
     PASSWORD = "20050102s"
     driver_path = '/app/.chromedriver/bin/chromedriver'
 
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="function scraping"))
+
 
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
