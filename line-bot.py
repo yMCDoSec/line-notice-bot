@@ -52,12 +52,12 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    text = scraping()
+    text = scraping(event)
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text + text))
+        TextSendMessage(text=text))
 
-def scraping():
+def scraping(event):
     NUMBER = "0015081677"
     PASSWORD = "20050102s"
     driver_path = '/app/.chromedriver/bin/chromedriver'
@@ -79,6 +79,9 @@ def scraping():
     browser.get(url)
     browser.implicitly_wait(3)
 
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="ログイン"))
     # print("ログインページにアクセスしました")
 
     # 入力
@@ -94,6 +97,10 @@ def scraping():
     # print("テスト")
     element = browser.find_element_by_id("btn_login")
     browser.execute_script("arguments[0].click();", element)
+
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="入力してログイン"))
     # print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
@@ -101,18 +108,27 @@ def scraping():
     mypage_url = browser.find_element_by_css_selector(".btn-primary")
     mypage_url = mypage_url.get_attribute("href")
     browser.get(mypage_url)
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="マイページのURL; " + mypage_url))
     # print("マイページのURL: ", mypage_url)
 
     browser.implicitly_wait(3)
 
     element = browser.find_element_by_id("btn_Search_Medical")
     browser.execute_script("arguments[0].click();", element)
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="接種会場を選択"))
     # print("接種会場を選択")
 
     browser.implicitly_wait(3)
 
     element = browser.find_element_by_id("btn_search_medical")
     browser.execute_script("arguments[0].click();", element)
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text="検索"))
     # print("検索")
 
     browser.implicitly_wait(20)
