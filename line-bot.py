@@ -85,7 +85,8 @@ def scraping():
 
     browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
 
-    url = "https://v-yoyaku.jp/282014-himeji"
+    url = "http://convert.html.xdomain.jp/"
+    # url = "https://v-yoyaku.jp/282014-himeji"
     browser.get(url)
     browser.implicitly_wait(3)
 
