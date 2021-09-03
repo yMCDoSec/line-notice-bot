@@ -32,6 +32,10 @@ YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 
+# ローカルテスト
+# line_bot_api = LineBotApi("r7LngSqhFt+1dg9gLs1e+715THk1mAG4cksqzbzeGbTx+qhJr7Pi4ZEfLjgNXqQSCRTHk6KiLFpSa+R+6BkfGJDZHtqCqMgcHCTC0jA4wwbv3J5qaaZSJGn4/wy6QNmWxIv0t9R+NR2V5ZH+qR1DPAdB04t89/1O/w1cDnyilFU=")
+# handler = WebhookHandler("72fcc69efb3acd90ee7c91f9c974f97d")
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -61,6 +65,7 @@ def scraping(event):
     NUMBER = "0015081677"
     PASSWORD = "20050102s"
     driver_path = '/app/.chromedriver/bin/chromedriver'
+
 
     line_bot_api.reply_message(
         event.reply_token,
