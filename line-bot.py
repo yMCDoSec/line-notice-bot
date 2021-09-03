@@ -50,23 +50,20 @@ def callback():
 
     return 'OK'
 
+def sendMessage(event, text):
+    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text))
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     text = scraping(event)
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=text))
+    sendMessage(event, text)
 
 def scraping(event):
     NUMBER = "0015081677"
     PASSWORD = "20050102s"
     driver_path = '/app/.chromedriver/bin/chromedriver'
 
-
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="function scraping"))
+    sendMessage(event, "function scraping")
 
 
     options = Options()
@@ -85,9 +82,8 @@ def scraping(event):
     browser.get(url)
     browser.implicitly_wait(3)
 
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="ログイン"))
+    sendMessage(event, "login")
+
     # print("ログインページにアクセスしました")
 
     # 入力
@@ -104,9 +100,8 @@ def scraping(event):
     element = browser.find_element_by_id("btn_login")
     browser.execute_script("arguments[0].click();", element)
 
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="入力してログイン"))
+
+    sendMessage(event, "output and login")
     # print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
@@ -123,19 +118,16 @@ def scraping(event):
 
     element = browser.find_element_by_id("btn_Search_Medical")
     browser.execute_script("arguments[0].click();", element)
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="接種会場を選択"))
+
+    sendMessage(event, "select")
     # print("接種会場を選択")
 
     browser.implicitly_wait(3)
 
     element = browser.find_element_by_id("btn_search_medical")
     browser.execute_script("arguments[0].click();", element)
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text="検索"))
-    # print("検索")
+
+    sendMessage(event, "search")
 
     browser.implicitly_wait(20)
     time.sleep(2)
