@@ -93,12 +93,10 @@ def scraping():
 
     print(browser.page_source)
     print("ログインページにアクセスしました")
+    f = open("test.txt", "w")
+    f.write(browser.page_source)
+    f.close()
 
-    browser.refresh()
-
-    time.sleep(3)
-    print(browser.page_source)
-    print("リフレッシュ")
 
     # 入力
     e = browser.find_element_by_id("login_id")
