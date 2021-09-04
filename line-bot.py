@@ -88,11 +88,13 @@ def scraping():
 
     browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
 
-    url = "https://www.city.himeji.lg.jp/bousai/0000015251.html"
+    url = "https://tools.loumo.jp/ip"
+    # url = "https://www.city.himeji.lg.jp/bousai/0000015251.html"
     # url = "https://v-yoyaku.jp/282014-himeji"
     browser.get(url)
     browser.implicitly_wait(3)
 
+    print(browser.page_source)
     print("ログインページにアクセスしました")
 
     element = browser.find_element_by_partial_link_text("新型コロナウイルスワクチン接種予約受付システム")
