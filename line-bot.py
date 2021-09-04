@@ -11,6 +11,8 @@ from linebot.models import (
 )
 import os
 import sys
+import time
+import platform
 
 # scraping
 from selenium import webdriver
@@ -22,7 +24,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-import time
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 app = Flask(__name__)
 
@@ -85,34 +88,72 @@ def scraping():
 
     browser = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
 
-    url = "https://v-yoyaku.jp/282014-himeji"
+    url = "https://www.city.himeji.lg.jp/bousai/0000015251.html"
+    # url = "https://v-yoyaku.jp/282014-himeji"
     browser.get(url)
     browser.implicitly_wait(3)
 
-    time.sleep(3)
+    print("ログインページにアクセスしました")
+
+    element = browser.find_element_by_partial_link_text("新型コロナウイルスワクチン接種予約受付システム")
+
+    #クリック前のハンドルリスト
+    handles_befor = browser.window_handles
+
+    #(リンク)要素を新しいタブで開く
+    actions = ActionChains(browser)
+
+    if platform.system() == 'Darwin':
+        #Macなのでコマンドキー
+        actions.key_down(Keys.COMMAND)
+    else:
+        #Mac以外なのでコントロールキー
+        actions.key_down(Keys.CONTROL)
+
+    actions.click(element)
+    actions.perform()
+
+    #新しいタブが開ききるまで最大30秒待機
+    try:
+        WebDriverWait(browser, 30).until(lambda a: len(a.window_handles) > len(handles_befor))
+    except TimeoutException:
+        print('TimeoutException: 新規ウィンドウが開かずタイムアウトしました')
+        sys.exit(1)
+
+    #クリック後のハンドルリスト
+    handles_after = browser.window_handles
+
+    #ハンドルリストの差分
+    handle_new = list(set(handles_after) - set(handles_befor))
+
+    #新しいタブに移動
+    browser.switch_to.window(handle_new[0])
+
+    browser.implicitly_wait(3)
+    time.sleep(2)
 
     print(browser.page_source)
-    print("ログインページにアクセスしました")
-    f = open("test.txt", "w")
-    f.write(browser.page_source)
-    f.close()
 
+    actions = ActionChains(browser)
 
     # 入力
     e = browser.find_element_by_id("login_id")
-    e.clear()
-    e.send_keys(NUMBER)
+    # e.clear()
+    # e.send_keys(NUMBER)
+    browser.execute_script('arguments[0].value="%s";' % NUMBER, e)
+
 
     e = browser.find_element_by_id("login_pwd")
-    e.clear()
-    e.send_keys(PASSWORD)
+    # e.clear()
+    # e.send_keys(PASSWORD)
+    browser.execute_script('arguments[0].value="%s";' % PASSWORD, e)
+
 
     # フォームを転送
     print("テスト")
     element = browser.find_element_by_id("btn_login")
     browser.execute_script("arguments[0].click();", element)
-
-
+    # actions.click(element).perform()
     print("情報を入力してログインボタンを押しました")
 
     browser.implicitly_wait(3)
